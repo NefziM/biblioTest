@@ -16,11 +16,10 @@ public class Library {
 	 public Book searchBookByTitle(String title) {
 	        for (Book book : books) {
 	            if (book.getTitle().equals(title)) {
-	                // Si le livre existe
+	            
 	                System.out.println("Livre trouvé: " + book.getTitle());
-	                return book;  // Retourner le livre trouvé
+	                return book;  
 	            } else {
-	                // Si ce livre ne correspond pas au titre recherché
 	                System.out.println("Livre non trouvé pour le titre: " + title);
 	            }
 	        }
